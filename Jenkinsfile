@@ -4,20 +4,17 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'This is build stage'
-                touch /tmp/buildfile.txt
+                echo 'This is build stage'     
             }
         }
       stage('test') {
             steps {
                 echo 'This is test stage'
-                touch /tmp/testfile.txt
             }
         }
       stage('deploy') {
             steps {
                 echo 'This is deploy stage'
-                touch /tmp/deployfile.txt
             }
         }
     }
